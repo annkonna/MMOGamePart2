@@ -44,9 +44,9 @@ class Redzone(object):
         return self.rect
 
     def update_redzone_pos(self):
-        self.rect.centerx -= 15
+        self.rect.centerx -= 20
         if self.rect.left < 0:
-            self.rect.width -= 15
+            self.rect.width -= 20
             if self.rect.width < 0:
                 self.rect.left = self.max_width
                 self.rect.width = random.randrange(300, 1500)
